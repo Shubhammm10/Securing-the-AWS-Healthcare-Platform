@@ -69,7 +69,7 @@ This project focuses on securing a HIPAA-compliant healthcare application hosted
 **Impact:** Ransomware: Attackers encrypted 500 GB of patient data, demanding 5 BTC for decryption.
 
 ### 2.2 Finding: Sensitive Data Unclassified [High]
-**Danger: ** PHI/PII stored in unmarked S3 buckets.
+**Danger:** PHI/PII stored in unmarked S3 buckets.
 
 **Impact:** Failed HIPAA audit due to lack of data governance.
 
