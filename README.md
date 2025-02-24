@@ -15,10 +15,12 @@ This project focuses on securing a HIPAA-compliant healthcare application hosted
 
 ### 1.1 Finding: Secret Access Key Exposed [Critical]
 **Danger:** Stolen keys could allow attackers to delete S3 buckets, spin up crypto-mining EC2 instances, or exfiltrate 10,000+ patient records.
+
 **Impact:** Cost Explosion: $15,000+ in unauthorized AWS resource usage within 24 hours.
 
 ### 1.2 Finding: Vulnerabilities Related to DoS [Critical]
 **Danger:** Unpatched Python libraries (e.g., Pillow) allowed attackers to crash EC2 instances by exhausting memory.
+
 **Impact:** Downtime: 6-hour outage during peak hours, delaying 1,200+ patient consultations.
 
 ### 1.3 Finding: No Multi-Factor Authentication (MFA) [High]
