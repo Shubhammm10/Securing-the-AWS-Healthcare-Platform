@@ -408,15 +408,15 @@ Transforming Vulnerabilities into a HIPAA-Compliant Architecture
 
 ## 1. IT Support Architecture
 The IT Support Architecture ensures secure access for remote employees while protecting sensitive healthcare data. AWS Client VPN with MFA provides encrypted, authenticated access to internal resources. Amazon Macie classifies and monitors PHI stored in S3 buckets, ensuring compliance with HIPAA. CloudTrail and GuardDuty provide real-time monitoring and threat detection, while AWS WAF and Shield Advanced block malicious traffic. By isolating resources in private subnets and encrypting data with AWS KMS, the architecture minimizes attack surfaces and ensures data confidentiality, integrity, and availability.
-![IT SUpport](IT support.png)
+![IT SUpport](Image\IT support.png)
 
 ## 2. Patient-Facing Architecture
 The Patient-Facing Architecture prioritizes secure, low-latency access to healthcare applications. Amazon CloudFront with AWS WAF protects against DDoS and OWASP Top 10 attacks, while caching content at edge locations for faster delivery. EC2 instances in private subnets ensure compute resources are shielded from direct internet access, and RDS databases with encryption store PHI securely. Amazon Athena and AWS Glue enable real-time analytics on patient data, while AWS Backup ensures data resilience with automated cross-region backups. This architecture ensures high availability, scalability, and compliance with HIPAA regulations.
-![Patient](Patient POV.png)
+![Patient](Image\Patient POV.png)
 
 ## 3. Care Provider Architecture
 The Care Provider Architecture focuses on secure access and high availability for healthcare providers. IAM Roles and RBAC enforce least-privilege access, while AWS Systems Manager (SSM) replaces insecure SSH for instance management. Multi-AZ RDS with encryption ensures fault tolerance for critical databases, and Auto Scaling dynamically adjusts EC2 capacity to handle fluctuating workloads. Amazon ElastiCache improves application performance by caching frequently accessed data, while AWS Elastic Disaster Recovery (DRS) ensures rapid recovery during outages. By integrating CloudWatch and GuardDuty, the architecture provides real-time monitoring and automated threat response, ensuring uninterrupted care delivery.
-![Care Provider](Care provider.png)
+![Care Provider](Image\Care provider.png)
 
 # Results  
 - **Risk Reduction**: Addressed 4 critical, 10 high, and 15 medium vulnerabilities.  
